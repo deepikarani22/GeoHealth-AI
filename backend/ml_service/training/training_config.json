@@ -1,0 +1,15 @@
+{
+  "dataset_path": "raw/final_training_dataset.csv",
+  "target_prefix": "icd_l1_prev_",
+  "test_size": 0.2,
+  "random_state": 42,
+  "xgb_params": {
+    "n_estimators": 500,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "objective": "reg:squarederror",
+    "tree_method": "hist"
+  }
+}

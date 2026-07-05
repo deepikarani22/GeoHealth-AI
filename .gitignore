@@ -1,0 +1,66 @@
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ===========================
+# Virtual Environments
+# ===========================
+venv/
+venv39/
+.venv/
+
+# ===========================
+# Environment Variables
+# ===========================
+.env
+.env.*
+
+# ===========================
+# Node.js
+# ===========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===========================
+# IDEs
+# ===========================
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# ===========================
+# Project-specific
+# ===========================
+
+# Large datasets
+backend/data/**
+
+# Training datasets/artifacts
+backend/ml_service/training/artifacts/**
+backend/ml_service/training/processed/**
+backend/ml_service/training/raw/**
+
+# Database
+backend/database/geohealth_cache.db
+
+# Trained models
+backend/ml_service/training/models/*.pkl
+
+# Training outputs
+backend/ml_service/training/scaler.pkl
+backend/ml_service/training/train_features.npy
+backend/ml_service/training/train_labels.npy
